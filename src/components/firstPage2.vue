@@ -1,109 +1,314 @@
 <template>
-  <div class="mainContainer relative bg-top bg-no-repeat bg-cover bg-firstPage h-[880px] xl:min-h-screen">
+  <div class="w-full relative bg-top bg-no-repeat bg-cover bg-firstPage h-[880px] xl:min-h-screen">
     <!--  -->
     <!-- :style="{ height: usescreenWidth().special ? '100vh' : '' }" -->
     <!-- bg-firstPage  -->
 
-    <div class="main">
+    <div class="
+    m-auto 
+    max-w-[1170px] 
+    max-[1200px]:max-w-[950px] 
+    max-[1000px]:max-w-[720px] 
+    max-[720px]:mt-0
+    max-[720px]:mr-[14px]
+    max-[720px]:mb-0
+    max-[720px]:ml-[15px]
+    ">
       <div class="w-full top-0 relative">
         <topBar />
-        <div class="Exclusive">
+        <div class="w-[329px] h-[232px] text-left text-white box-content pt-[226px]  
+        tracking-normal
+        text-7xl 
+        leading-[80px]
+        font-HeitiTC   
+        
+        max-[600px]:w-[256px]
+        max-[600px]:h-[184px]
+        max-[600px]:pt-[126px]
+        max-[600px]:text-[56px]
+        max-[600px]:leading-[64px]
+
+           ">
           Exclusive Boutique Hotel
         </div>
-        <div class="Luxury">
+        <div class="
+        w-[207px] h-5 text-left text-white mt-[21px]  
+        text-xl
+        leading-8
+        font-HeitiTC   
+        tracking-normal
+        max-[600px]:mt-[25px]
+        max-[600px]:leading-5    
+        ">
           Luxury Boutique Hotel
         </div>
-        <div class="pic3Area w-auto flex">
-          <div class="icon"> <img src="@/assets/images/Image_FB.svg" class="iconPic"></div>
-          <div class="icon"> <img src="@/assets/images/image_twitter.svg" class="iconPic"></div>
-          <div class="icon"> <img src="@/assets/images/Image_ig.svg" class="iconPic"></div>
-          <!-- <div class="text-red-700 text-white">1</div> -->
-
+        <div class="mt-[45px] w-auto flex">
+          <div class="w-12 h-12 mr-2 rounded-[50%]">
+            <img src="@/assets/images/Image_FB.svg" class="w-full object-contain">
+          </div>
+          <div class="w-12 h-12 mr-2 rounded-[50%]"> <img src="@/assets/images/image_twitter.svg"
+              class="w-full object-contain"></div>
+          <div class="w-12 h-12 mr-2 rounded-[50%]"> <img src="@/assets/images/Image_ig.svg"
+              class="w-full object-contain"></div>
         </div>
 
-        <div class="floatBlock flex" @click="openCloseBar" v-if="barStatus">
+        <div class="floatBlock w-full flex rounded-[15px] bg-[#2C4664] bg-left-top bg-no-repeat bg-clip-padding shadow-[10px_10px_20px_0_#00000019]
+        h-[144px] mt-16 relative
+        max-[600px]:h-[576px]
+        max-[600px]:absolute
+        max-[600px]:z-[2]
+        max-[600px]:top-[448px]
+        max-[600px]:mt-12
+        max-[600px]:mb-0
+        max-[600px]:mx-auto
 
-          <img src="@/assets/images/button_dropDown.svg" class="downArrow">
+        
+        " @click="openCloseBar" v-if="barStatus">
 
+          <img src="@/assets/images/button_dropDown.svg" class="absolute w-12 h-12 shadow-[10px_10px_20px_0_#0000001A] bottom-0 left-1/2 rounded-[50%] z-[2]
+          -translate-x-1/2 translate-y-6
+          ">
 
-          <div class="floatBlockMain">
-            <div class="ccard">
+          <div class="floatBlockMain w-full relative flex max-[600px]:flex-col">
+            <div class=" 
+            flex w-1/4 flex-col px-8 border-r border-solid border-black
+            max-[1200px]:px-5
+            max-[1000px]:px-[10px]
+            max-[720px]:px-[5px]
+            max-[600px]:w-full
+            max-[600px]:h-1/4
+            max-[600px]:px-8
+            max-[600px]:border-r-0
+            max-[600px]:border-b
+            ">
 
-              <div class="ccardTop">
+              <div class="text-left font-HeitiTC
+              text-sm
+              leading-[14px]
+              tracking-normal              
+              text-[#FFFFFF7E]
+              py-7           
+              ">
                 ARRIVAL
               </div>
-              <div class="ccardBottom">
-                <div class="left">18</div>
-                <div class="right">
-                  <div class="top">
-                    <div class="topfont">
+              <div class="flex">
+                <div class="
+              w-[62px] text-left font-HeitiTC
+              text-[56px]
+              leading-[56px]
+              tracking-normal
+            text-white
+              mr-[22px]
+              max-[1000px]:w-12
+              max-[1000px]:text-[40px]
+              max-[1000px]:leading-[40px]
+              max-[1000px]:mr-[10px]
+              max-[720px]:mr-[5px]
+              max-[600px]:w-[62px]
+              max-[600px]:h-14
+              max-[600px]:text-[56px]
+              max-[600px]:leading-[56px]
+              max-[600px]:mr-[22px]
+                ">18</div>
+                <div class="right h-full">
+                  <div class="top h-7">
+                    <div class="inline-block h-[18px] text-left font-HeitiTC tracking-normal text-white
+                    text-lg
+                    leading-[18px]
+                    max-[720px]:h-[15px]
+                    max-[720px]:text-[13px]
+                    max-[720px]:leading-[13px]
+                    max-[600px]:h-[18px]
+                    max-[600px]:text-[18px]
+                    max-[600px]:leading-[18px]
+                    ">
                       Oct, 2019
                     </div>
-                    <img src="@/assets/images/button_onlyDropDown.svg" class="topImg">
+                    <img src="@/assets/images/button_onlyDropDown.svg" class="
+                    inline-block w-[9px] object-contain ml-[11px] align-bottom
+                    max-[1000px]:ml-[5px]
+                    max-[600px]:ml-[11px]
+                    ">
                   </div>
-                  <div class="bottom">Friday</div>
+                  <div class="text-left font-HeitiTC
+                    text-[14px]
+                    leading-[14px]
+                    tracking-normal
+                  text-[#ffffff7e]
+            ">Friday</div>
                 </div>
               </div>
 
             </div>
-            <div class="ccard">
+            <div class="
+            flex w-1/4 flex-col px-8 border-r border-solid border-black           
+            max-[1200px]:px-5
+            max-[1000px]:px-[10px]
+            max-[720px]:px-[5px]
+            max-[600px]:px-8
+            max-[600px]:w-full
+            max-[600px]:h-1/4
+            max-[600px]:border-r-0
+            max-[600px]:border-b
+            ">
 
-              <div class="ccardTop">
+              <div class="text-left font-HeitiTC
+              text-sm
+              leading-[14px]
+              tracking-normal              
+              text-[#FFFFFF7E]
+              py-7
+              ">
                 DEPARTURE
               </div>
-              <div class="ccardBottom">
-                <div class="left">19</div>
-                <div class="right">
-                  <div class="top">
-                    <div class="topfont">
+              <div class="flex">
+                <div class=" w-[62px] text-left font-HeitiTC
+              text-[56px]
+              leading-[56px]
+              tracking-normal
+            text-white
+              mr-[22px]
+              max-[1000px]:w-12
+              max-[1000px]:text-[40px]
+              max-[1000px]:leading-[40px]
+              max-[1000px]:mr-[10px]
+              max-[720px]:mr-[5px]
+              max-[600px]:w-[62px]
+              max-[600px]:h-14
+              max-[600px]:text-[56px]
+              max-[600px]:leading-[56px]
+              max-[600px]:mr-[22px]">19</div>
+                <div class="right h-full">
+                  <div class="top h-7">
+                    <div class="
+                    inline-block h-[18px] text-left font-HeitiTC tracking-normal text-white
+                    text-lg
+                    leading-[18px]
+                    max-[720px]:h-[15px]
+                    max-[720px]:text-[13px]
+                    max-[720px]:leading-[13px]
+                    max-[600px]:h-[18px]
+                    max-[600px]:text-[18px]
+                    max-[600px]:leading-[18px]
+                    ">
                       Oct, 2019
                     </div>
-                    <img src="@/assets/images/button_onlyDropDown.svg" class="topImg">
+                    <img src="@/assets/images/button_onlyDropDown.svg" class="
+                    inline-block w-[9px] object-contain ml-[11px] align-bottom
+                    max-[1000px]:ml-[5px]
+                    max-[600px]:ml-[11px]
+                    ">
                   </div>
-                  <div class="bottom">Saturday</div>
+                  <div class="text-left font-HeitiTC
+                    text-[14px]
+                    leading-[14px]
+                    tracking-normal
+                    text-[#ffffff7e]">Saturday</div>
                 </div>
               </div>
 
 
             </div>
-            <div class="ccard3">
-              <div class="w-1/2 ccard2">
-                <div class="ccard2Top">
+            <div class="w-1/4 flex 
+            max-[600px]:w-full
+            max-[600px]:h-1/4
+            max-[600px]:border-b-black
+            max-[600px]:border-solid
+            max-[600px]:border-b
+            ">
+              <div class="w-1/2 py-[18px] border-r border-solid border-black">
+                <div
+                  class="my-[10px] mx-auto text-center font-HeitiTC tracking-normal text-sm leading-[14px] text-[#ffffff7e]">
                   ADULTS
                 </div>
-                <div class="ccard2Bottom">
-                  <div>-</div>
-                  <div>2</div>
-                  <div>+</div>
+                <div class="
+                mt-[18px]
+                px-[29px]
+                w-full
+                flex
+                justify-around
+                max-[1200px]:px-5
+                max-[1000px]:px-[10px]
+                max-[600px]:px-[29px]
+                ">
+                  <div class="text-left font-NunitoSans tracking-normal text-2xl leading-8 text-white
+                  max-[720px]:text-[16px]
+                  max-[600px]:text-[24px]
+                  ">-</div>
+                  <div class="text-left font-HeitiTC tracking-normal text-[56px] leading-[64px] text-white
+                  max-[720px]:text-[42px]
+                  max-[600px]:text-[56px]
+                  ">2</div>
+                  <div class="text-left font-NunitoSans tracking-normal text-2xl leading-8 text-white
+                  max-[720px]:text-[16px]
+                  max-[600px]:text-[24px]
+                  ">+</div>
                 </div>
               </div>
 
 
 
-
-              <div class="w-1/2 ccard2">
-                <div class="ccard2Top">
+              <div class="w-1/2 py-[18px] border-r border-solid border-black">
+                <div
+                  class="my-[10px] mx-auto text-center font-HeitiTC tracking-normal text-sm leading-[14px] text-[#ffffff7e]">
                   CHILDREN
                 </div>
-                <div class="ccard2Bottom">
-                  <div>-</div>
-                  <div>2</div>
-                  <div>+</div>
+                <div class="
+                mt-[18px]
+                px-[29px]
+                w-full
+                flex
+                justify-around
+                max-[1200px]:px-5
+                max-[1000px]:px-[10px]
+                max-[600px]:px-[29px]
+                ">
+                  <div class="text-left font-NunitoSans tracking-normal text-2xl leading-8 text-white
+                  max-[720px]:text-[16px]
+                  max-[600px]:text-[24px]
+                  ">-</div>
+                  <div class="text-left font-HeitiTC tracking-normal text-[56px] leading-[64px] text-white
+                  max-[720px]:text-[42px]
+                  max-[600px]:text-[56px]
+                  ">2</div>
+                  <div class="text-left font-NunitoSans tracking-normal text-2xl leading-8 text-white
+                  max-[720px]:text-[16px]
+                  max-[600px]:text-[24px]
+                  ">+</div>
                 </div>
               </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-            <div class="w-1/4 flex justify-center items-center">
-              <div class="checkAVAILABILITY_Btn flex justify-center items-center"><span>
+            <div class="w-1/4 flex justify-center items-center
+            max-[600px]:w-full
+            max-[600px]:h-1/4
+            ">
+              <div class="
+              h-12
+              bg-[#C8FF8C]
+              bg-origin-padding
+              bg-left-top
+              rounded-3xl
+              flex justify-center items-center
+              w-[226px]
+              max-[1200px]:w-[210px]
+              max-[1000px]:w-[170px]
+              max-[720px]:w-[130px]
+              max-[600px]:w-[226px]
+              "><span class="
+              text-center
+              font-NunitoSans
+              text-[16px]
+              leading-6
+              text-[#333333]
+              tracking-[1px]
+              uppercase
+              max-[1000px]:text-xs
+              max-[1000px]:leading-3
+              max-[720px]:text-[10px]
+              max-[720px]:leading-[10px]
+              max-[600px]:text-[16px]
+              max-[600px]:leading-6
+              ">
                   CHECK AVAILABILITY
                 </span></div>
             </div>
@@ -140,786 +345,4 @@ const openCloseBar = () => {
 </script>
 
 
-<style lang="scss" scoped>
-// .main {
-//   padding-bottom: 48px;
-// }
-.Exclusive {
-  /* Layout Properties */
-  width: 329px;
-  height: 232px;
-  /* UI Properties */
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-72)/var(--unnamed-line-spacing-80) Heiti TC;
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--unnamed-color-ffffff);
-  text-align: left;
-  font: normal normal 300 72px/80px Heiti TC;
-  letter-spacing: 0px;
-  color: #FFFFFF;
-  opacity: 1;
-
-  box-sizing: content-box;
-  padding-top: 226px;
-}
-
-.Luxury {
-  /* Layout Properties */
-  width: 207px;
-  height: 20px;
-  /* UI Properties */
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-20)/var(--unnamed-line-spacing-32) Heiti TC;
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--unnamed-color-ffffff);
-  text-align: left;
-  font: normal normal 300 20px/32px Heiti TC;
-  letter-spacing: 0px;
-  color: #FFFFFF;
-  opacity: 1;
-
-  line-height: 20px;
-  margin-top: 21px;
-}
-
-.pic3Area {
-  margin-top: 45px;
-
-  .icon {
-    width: 48px;
-    height: 48px;
-    // background: rgba(0, 0, 0, 0.3);
-    border-radius: 50%;
-    margin-right: 8px;
-
-    .iconPic {
-      width: 100%;
-      object-fit: contain;
-      opacity: 1;
-    }
-  }
-}
-
-.floatBlock {
-  width: 100%;
-  height: 144px;
-  background: #2C4664 0% 0% no-repeat padding-box;
-  box-shadow: 10px 10px 20px #00000019;
-  border-radius: 15px;
-  opacity: 1;
-  position: relative;
-  margin-top: 64px;
-  // padding-bottom: 18px;
-  // padding: 0 0 18px 0;
-
-  .downArrow {
-    position: absolute;
-    width: 48px;
-    height: 48px;
-    /* UI Properties */
-    // background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
-    // background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 10px 10px 20px #0000001A;
-    opacity: 1;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 24px);
-    border-radius: 50%;
-    z-index: 2;
-  }
-
-  .floatBlockMain {
-    width: 100%;
-    display: flex;
-    position: relative;
-    .ccard {
-      display: flex;
-      width: 25%;
-      flex-direction: column;
-      padding: 0 32px;
-      border-right: 1px solid black;
-
-      .ccardTop {
-        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-24) Heiti TC;
-        letter-spacing: var(--unnamed-character-spacing-0);
-        color: var(--unnamed-color-ffffff7d);
-        text-align: left;
-        font: normal normal 300 14px/24px Heiti TC;
-        letter-spacing: 0px;
-        color: #FFFFFF7E;
-        opacity: 1;
-        line-height: 14px;
-
-        padding: 28px 0;
-      }
-
-      .ccardBottom {
-        display: flex;
-
-        .left {
-          width: 62px;
-          font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-56)/var(--unnamed-line-spacing-64) Heiti TC;
-          letter-spacing: var(--unnamed-character-spacing-0);
-          color: var(--unnamed-color-ffffff);
-          text-align: left;
-          font: normal normal 300 56px/64px Heiti TC;
-          letter-spacing: 0px;
-          color: #FFFFFF;
-          opacity: 1;
-          line-height: 56px;
-          margin-right: 22px;
-        }
-
-        .right {
-          // width: 90px;
-          height: 100%;
-          // background: red;
-
-          .top {
-            height: 28px;
-
-            // display: flex;
-
-            .topfont {
-              display: inline-block;
-              height: 18px;
-              font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-32) Heiti TC;
-              letter-spacing: var(--unnamed-character-spacing-0);
-              color: var(--unnamed-color-ffffff);
-              text-align: left;
-              font: normal normal 300 18px/32px Heiti TC;
-              letter-spacing: 0px;
-              color: #FFFFFF;
-              opacity: 1;
-
-              line-height: 18px;
-            }
-
-            .topImg {
-              display: inline-block;
-              width: 9px;
-              object-fit: contain;
-              margin-left: 11px;
-              vertical-align: bottom;
-            }
-
-          }
-
-          .bottom {
-            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-24) Heiti TC;
-            letter-spacing: var(--unnamed-character-spacing-0);
-            color: var(--unnamed-color-ffffff7d);
-            text-align: left;
-            font: normal normal 300 14px/24px Heiti TC;
-            letter-spacing: 0px;
-            color: #FFFFFF7E;
-            opacity: 1;
-            line-height: 14px;
-          }
-        }
-      }
-    }
-
-    .ccard3 {
-      width: 25%;
-      display: flex;
-
-      .ccard2 {
-        padding: 18px 0;
-        // flex-direction: column;
-        border-right: 1px solid black;
-
-        .ccard2Top {
-          margin: 10px auto;
-          font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-24) Heiti TC;
-          letter-spacing: var(--unnamed-character-spacing-0);
-          color: var(--unnamed-color-ffffff7d);
-          text-align: center;
-          font: normal normal 300 14px/24px Heiti TC;
-          letter-spacing: 0px;
-          color: #FFFFFF7E;
-          opacity: 1;
-          line-height: 14px;
-        }
-
-        .ccard2Bottom {
-          margin-top: 18px;
-          // height: 28px;
-          padding: 0 29px;
-          width: 100%;
-          display: flex;
-          justify-content: space-around;
-
-          div:nth-child(1),
-          div:nth-child(3) {
-            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-32) var(--unnamed-font-family-nunito-sans);
-            letter-spacing: var(--unnamed-character-spacing-0);
-            color: var(--unnamed-color-ffffff);
-            text-align: left;
-            font: normal normal 300 24px/32px Nunito Sans;
-            letter-spacing: 0px;
-            color: #FFFFFF;
-            opacity: 1;
-          }
-
-          div:nth-child(2) {
-            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-56)/var(--unnamed-line-spacing-64) Heiti TC;
-            letter-spacing: var(--unnamed-character-spacing-0);
-            color: var(--unnamed-color-ffffff);
-            text-align: center;
-            font: normal normal 300 56px/64px Heiti TC;
-            letter-spacing: 0px;
-            color: #FFFFFF;
-            opacity: 1;
-          }
-        }
-      }
-    }
-
-    div:nth-child(4) {
-
-      .checkAVAILABILITY_Btn {
-        width: 226px;
-        height: 48px;
-        /* UI Properties */
-        background: #C8FF8C 0% 0% no-repeat padding-box;
-        border-radius: 24px;
-        opacity: 1;
-
-        span {
-          font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 16px/var(--unnamed-line-spacing-24) var(--unnamed-font-family-nunito-sans);
-          color: var(--unnamed-color-333333);
-          text-align: center;
-          font: normal normal normal 16px/24px Nunito Sans;
-          letter-spacing: 1px;
-          color: #333333;
-          text-transform: uppercase;
-          opacity: 1;
-        }
-      }
-    }
-  }
-
-}
-
-
-@media (max-width: 1200px) {
-  .floatBlock {
-    .floatBlockMain {
-
-
-      .ccard {
-        display: flex;
-        flex-direction: column;
-        padding: 0 20px;
-        border-right: 1px solid black;
-      }
-
-      .ccard3 {
-        width: 25%;
-        display: flex;
-
-        .ccard2 {
-          padding: 18px 0;
-          // flex-direction: column;
-          border-right: 1px solid black;
-
-          .ccard2Bottom {
-            margin-top: 18px;
-            // height: 28px;
-            padding: 0 20px;
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-          }
-        }
-      }
-
-
-      div:nth-child(4) {
-        .checkAVAILABILITY_Btn {
-          width: 210px;
-          height: 48px;
-          /* UI Properties */
-          background: #C8FF8C 0% 0% no-repeat padding-box;
-          border-radius: 24px;
-          opacity: 1;
-        }
-      }
-    }
-
-  }
-
-}
-
-@media (max-width: 1000px) {
-  .floatBlock {
-
-    .floatBlockMain {
-
-      .ccard {
-        display: flex;
-        flex-direction: column;
-        padding: 0 10px;
-        border-right: 1px solid black;
-
-        .ccardBottom {
-          .left {
-            width: 48px;
-            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-56)/var(--unnamed-line-spacing-64) Heiti TC;
-            letter-spacing: var(--unnamed-character-spacing-0);
-            color: var(--unnamed-color-ffffff);
-            text-align: left;
-            font: normal normal 300 40px/64px Heiti TC;
-            letter-spacing: 0px;
-            color: #FFFFFF;
-            opacity: 1;
-            line-height: 40px;
-            margin-right: 10px;
-          }
-
-          .right {
-            .top {
-              .topImg {
-                margin-left: 5px;
-              }
-            }
-
-          }
-        }
-      }
-
-      .ccard3 {
-        width: 25%;
-        display: flex;
-
-        .ccard2 {
-          padding: 18px 0;
-          // flex-direction: column;
-          border-right: 1px solid black;
-
-          .ccard2Bottom {
-            margin-top: 18px;
-            // height: 28px;
-            padding: 0 10px;
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-          }
-        }
-      }
-
-
-      div:nth-child(4) {
-        .checkAVAILABILITY_Btn {
-          width: 170px;
-          height: 48px;
-          /* UI Properties */
-          background: #C8FF8C 0% 0% no-repeat padding-box;
-          border-radius: 24px;
-          opacity: 1;
-
-          span {
-            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 16px/var(--unnamed-line-spacing-24) var(--unnamed-font-family-nunito-sans);
-            color: var(--unnamed-color-333333);
-            text-align: center;
-            font: normal normal normal 12px/24px Nunito Sans;
-            letter-spacing: 1px;
-            color: #333333;
-            text-transform: uppercase;
-            opacity: 1;
-            line-height: 12px;
-          }
-        }
-      }
-
-
-    }
-
-
-
-
-
-  }
-}
-
-
-@media (max-width: 720px) {
-  .floatBlock {
-
-    .floatBlockMain {
-
-      .ccard {
-        display: flex;
-        flex-direction: column;
-        padding: 0 5px;
-        border-right: 1px solid black;
-
-        .ccardBottom {
-          .left {
-            width: 48px;
-            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-56)/var(--unnamed-line-spacing-64) Heiti TC;
-            letter-spacing: var(--unnamed-character-spacing-0);
-            color: var(--unnamed-color-ffffff);
-            text-align: left;
-            font: normal normal 300 40px/64px Heiti TC;
-            letter-spacing: 0px;
-            color: #FFFFFF;
-            opacity: 1;
-            line-height: 40px;
-            margin-right: 5px;
-          }
-
-          .right {
-            .top {
-              .topImg {
-                margin-left: 5px;
-              }
-
-              .topfont {
-                display: inline-block;
-                height: 15px;
-                font: normal normal 300 13px / 32px Heiti TC;
-                line-height: 13px;
-              }
-            }
-
-          }
-        }
-      }
-
-      .ccard2 {
-        padding: 18px 0;
-        // flex-direction: column;
-        border-right: 1px solid black;
-
-        .ccard2Bottom {
-          margin-top: 18px;
-          // height: 28px;
-          padding: 0 10px;
-          width: 100%;
-          display: flex;
-          justify-content: space-around;
-
-          div:nth-child(1),
-          div:nth-child(3) {
-            font: normal normal 300 16px/32px Nunito Sans;
-          }
-
-          div:nth-child(2) {
-            font: normal normal 300 42px/64px Heiti TC;
-          }
-        }
-      }
-
-      div:nth-child(4) {
-        .checkAVAILABILITY_Btn {
-          width: 130px;
-          height: 48px;
-          /* UI Properties */
-          background: #C8FF8C 0% 0% no-repeat padding-box;
-          border-radius: 24px;
-          opacity: 1;
-
-          span {
-            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 16px/var(--unnamed-line-spacing-24) var(--unnamed-font-family-nunito-sans);
-            color: var(--unnamed-color-333333);
-            text-align: center;
-            font: normal normal normal 10px/24px Nunito Sans;
-            letter-spacing: 1px;
-            color: #333333;
-            text-transform: uppercase;
-            opacity: 1;
-            line-height: 10px;
-          }
-        }
-      }
-
-
-    }
-
-
-  }
-}
-
-
-
-
-@media (max-width: 600px) {
-
-  // 低於375顯示~~
-  .Exclusive {
-    width: 256px;
-    height: 184px;
-    /* UI Properties */
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-56)/var(--unnamed-line-spacing-64) Heiti TC;
-    letter-spacing: var(--unnamed-character-spacing-0);
-    color: var(--unnamed-color-ffffff);
-    text-align: left;
-    font: normal normal 300 56px/64px Heiti TC;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-
-    box-sizing: content-box;
-    padding-top: 126px;
-  }
-
-  .Luxury {
-    width: 207px;
-    height: 20px;
-    /* UI Properties */
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-20)/var(--unnamed-line-spacing-32) Heiti TC;
-    letter-spacing: var(--unnamed-character-spacing-0);
-    color: var(--unnamed-color-ffffff);
-    text-align: left;
-    font: normal normal 300 20px/32px Heiti TC;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-
-    line-height: 20px;
-    margin-top: 25px;
-  }
-
-  .pic3Area {
-    margin-top: 45px;
-
-    .icon {
-      width: 48px;
-      height: 48px;
-      // background: rgba(0, 0, 0, 0.3);
-      border-radius: 50%;
-      margin-right: 8px;
-
-      .iconPic {
-        width: 100%;
-        object-fit: contain;
-        opacity: 1;
-      }
-    }
-  }
-
-
-
-  .floatBlock {
-    width: 100%;
-    height: 576px;
-    background: #2C4664 0% 0% no-repeat padding-box;
-    box-shadow: 10px 10px 20px #00000019;
-    border-radius: 15px;
-    opacity: 1;
-    position: absolute;
-    z-index: 2;
-    margin: 48px auto 0 auto;
-top: 448px;
-// 會從448開始
-
-
-    .floatBlockMain {
-      display: flex;
-    flex-direction: column;
-      .downArrow {
-        position: absolute;
-        width: 48px;
-        height: 48px;
-        box-shadow: 10px 10px 20px #0000001A;
-        opacity: 1;
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%, 24px);
-        border-radius: 50%;
-      }
-
-      .ccard {
-        width: 100%;
-        height: 25%;
-        display: flex;
-        padding: 0 32px;
-        border-right: 0;
-        border-bottom: 1px solid black;
-
-        .ccardTop {
-          font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-24) Heiti TC;
-          letter-spacing: var(--unnamed-character-spacing-0);
-          color: var(--unnamed-color-ffffff7d);
-          text-align: left;
-          font: normal normal 300 14px/24px Heiti TC;
-          letter-spacing: 0px;
-          color: #FFFFFF7E;
-          opacity: 1;
-          line-height: 14px;
-
-          padding: 28px 0;
-        }
-
-        .ccardBottom {
-          display: flex;
-
-          .left {
-            width: 62px;
-            height: 56px;
-            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-56)/var(--unnamed-line-spacing-64) Heiti TC;
-            letter-spacing: var(--unnamed-character-spacing-0);
-            color: var(--unnamed-color-ffffff);
-            text-align: left;
-            font: normal normal 300 56px/64px Heiti TC;
-            letter-spacing: 0px;
-            color: #FFFFFF;
-            opacity: 1;
-            line-height: 56px;
-            margin-right: 22px;
-          }
-
-          .right {
-            // width: 90px;
-            height: 100%;
-            // background: red;
-
-            .top {
-              height: 28px;
-
-              // display: flex;
-
-              .topfont {
-                display: inline-block;
-                height: 18px;
-                font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-32) Heiti TC;
-                letter-spacing: var(--unnamed-character-spacing-0);
-                color: var(--unnamed-color-ffffff);
-                text-align: left;
-                font: normal normal 300 18px/32px Heiti TC;
-                letter-spacing: 0px;
-                color: #FFFFFF;
-                opacity: 1;
-
-                line-height: 18px;
-              }
-
-              .topImg {
-                display: inline-block;
-                width: 9px;
-                object-fit: contain;
-                margin-left: 11px;
-                vertical-align: bottom;
-              }
-
-            }
-
-            .bottom {
-              font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-24) Heiti TC;
-              letter-spacing: var(--unnamed-character-spacing-0);
-              color: var(--unnamed-color-ffffff7d);
-              text-align: left;
-              font: normal normal 300 14px/24px Heiti TC;
-              letter-spacing: 0px;
-              color: #FFFFFF7E;
-              opacity: 1;
-              line-height: 14px;
-            }
-          }
-        }
-      }
-
-      .ccard3 {
-        width: 100%;
-        height: 25%;
-        display: flex;
-        border-bottom: 1px solid black;
-
-        .ccard2 {
-          padding: 18px 0;
-          // flex-direction: column;
-          border-right: 1px solid black;
-
-          .ccard2Top {
-            margin: 10px auto;
-            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-24) Heiti TC;
-            letter-spacing: var(--unnamed-character-spacing-0);
-            color: var(--unnamed-color-ffffff7d);
-            text-align: center;
-            font: normal normal 300 14px/24px Heiti TC;
-            letter-spacing: 0px;
-            color: #FFFFFF7E;
-            opacity: 1;
-            line-height: 14px;
-          }
-
-          .ccard2Bottom {
-            margin-top: 18px;
-            // height: 28px;
-            padding: 0 29px;
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-
-            div:nth-child(1),
-            div:nth-child(3) {
-              font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-32) var(--unnamed-font-family-nunito-sans);
-              letter-spacing: var(--unnamed-character-spacing-0);
-              color: var(--unnamed-color-ffffff);
-              text-align: left;
-              font: normal normal 300 24px/32px Nunito Sans;
-              letter-spacing: 0px;
-              color: #FFFFFF;
-              opacity: 1;
-            }
-
-            div:nth-child(2) {
-              font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-56)/var(--unnamed-line-spacing-64) Heiti TC;
-              letter-spacing: var(--unnamed-character-spacing-0);
-              color: var(--unnamed-color-ffffff);
-              text-align: center;
-              font: normal normal 300 56px/64px Heiti TC;
-              letter-spacing: 0px;
-              color: #FFFFFF;
-              opacity: 1;
-            }
-          }
-        }
-
-      }
-
-
-
-      div:nth-child(4) {
-        width: 100%;
-        height: 25%;
-
-        .checkAVAILABILITY_Btn {
-          width: 226px;
-          height: 48px;
-          /* UI Properties */
-          background: #C8FF8C 0% 0% no-repeat padding-box;
-          border-radius: 24px;
-          opacity: 1;
-
-          span {
-            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 16px/var(--unnamed-line-spacing-24) var(--unnamed-font-family-nunito-sans);
-            color: var(--unnamed-color-333333);
-            text-align: center;
-            font: normal normal normal 16px/24px Nunito Sans;
-            letter-spacing: 1px;
-            color: #333333;
-            text-transform: uppercase;
-            opacity: 1;
-          }
-        }
-      }
-
-
-    }
-
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-}
-</style>
+<style lang="scss" scoped></style>

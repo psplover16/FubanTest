@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@layer base {
+    @font-face {
+        font-style: normal;
+        font-variant: normal; 
+        font-weight: 300; 
+
+        font-family: 'Heiti TC';
+        src: url('@/assets/heiti-tc-light.woff');
+
+
+        /* font-size: 72px; 
+       line-height: 80px;  */
+    }
+
+    @font-face {
+        font-family: 'Nunito Sans';
+        src: url('@/assets/nunito-sans.regular.ttf');
+
+        font-style: normal;
+        font-variant: normal; 
+        font-weight: normal; 
+    }
+
+    /* .Exclusive {
+
+        font-size: 72px; 
+        line-height: 80px; 
+        font-family: Heiti TC;
+    } */
+}

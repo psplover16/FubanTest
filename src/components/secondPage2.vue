@@ -1,22 +1,139 @@
 <template>
 
-  <div class="mainContainer relative bg-top bg-no-repeat bg-cover bg-[#EDF1F5]">
-    <div class="main">
+  <div class="w-full relative bg-top bg-no-repeat bg-cover bg-[#EDF1F5] h-[800px] max-[600px]:h-[1400px]">
+    <div class="    
+    m-auto
+    max-w-[1170px] 
+    max-[1200px]:max-w-[950px] 
+    max-[1000px]:max-w-[720px] 
+    max-[720px]:mt-0
+    max-[720px]:mr-[14px]
+    max-[720px]:mb-0
+    max-[720px]:ml-[15px]
 
-      <div class="w-full relative">
-        <div class="secondPage_font">
-          <div class="top">Luxury Plaza Hotel for You</div>
-          <div class="middle">Distant orb has power to raise and purify our thoughts like a strain of sacred music.
+    h-full
+    pt-36
+    max-[600px]:p-0
+    ">
+
+      <div
+        class="w-full relative flex justify-between h-[570px] max-[600px]:flex-col max-[600px]:h-auto max-[600px]:items-center">
+        <div
+          class="mr-[10px] flex flex-col justify-center max-[600px]:shrink-0 max-[600px]:mt-[319px] max-[600px]:mr-0">
+          <div class="
+          max-w-[345px]
+          text-left
+          font-HeitiTC
+          tracking-normal
+          text-[56px] 
+          leading-[64px]
+        text-[#333333]
+
+          max-[1000px]:w-[calc(100%-10px)]
+          max-[1000px]:text-[40px]
+          max-[1000px]:leading-10
+          max-[600px]:top-[1199px]
+          ">Luxury Plaza Hotel for You</div>
+          <div class="
+          max-w-[406px]
+          text-left
+          font-HeitiTC
+          tracking-normal
+          text-lg
+          leading-8
+        text-[#33333380]
+          mt-6
+          max-[1000px]:w-[calc(100%-10px)]
+          max-[1000px]:text-lg
+          max-[1000px]:leading-[18px]
+          max-[600px]:w-[346px]
+          max-[600px]:mt-[29px]
+          ">Distant orb has power to raise and purify our thoughts like a strain of sacred music.
           </div>
-          <div class="bottom"><span>ABOUT US</span></div>
+          <div class="
+          w-[170px]
+          h-12
+          border
+          border-[rgba(51,51,51,0.32)]
+          border-solid
+          rounded-3xl
+          flex
+          justify-center
+          items-center
+          mt-7
+          max-[600px]:mb-20
+          ">
+            <span class="
+            text-center
+            font-HeitiTC
+            tracking-[1px]
+            text-base
+            leading-6
+            text-[#333333]
+            uppercase
+            ">ABOUT US</span>
+          </div>
         </div>
-        <div class="secondPage_Pic">
-          <img src="@/assets/images/image_item.svg" class="secondPic">
-          <div class="playArea">
+        <div class="
+        w-[570px]
+        h-[560px]
+        min-w-[346px]
+        shrink-0
+        bg-white
+        bg-origin-padding
+        shadow-[20px_20px_40px_0_#0000001A]
+        rounded-[30px]
+        relative
+
+        max-[1000px]:w-[346px]
+        max-[1000px]:mb-[153px]
+        ">
+          <img src="@/assets/images/image_item.svg" class="
+          w-full
+          object-contain
+          max-[1000px]:rounded-[30px]
+          max-[1000px]:h-full
+          max-[1000px]:object-cover
+          ">
+          <div class="
+          w-full
+          h-[140px]
+          p-8
+          flex
+          items-center
+          absolute
+          bottom-0
+        bg-white
+          rounded-b-[30px]
+       
+          ">
             <img src="@/assets/images/button_player.svg" class="button_player">
-            <div class="playArea_font">
-              <div>Play video</div>
-              <div>2:34</div>
+            <div class="
+            w-full
+            h-full
+            ml-4
+            flex
+            flex-col
+            justify-around
+            ">
+              <div class="
+             h-6
+             text-left
+             font-HeitiTC
+             tracking-normal
+             text-2xl 
+             leading-6
+             text-[#333333]
+              ">Play video</div>
+              <div class="
+              h-[18px]
+              text-left
+              font-HeitiTC
+              tracking-normal
+             text-lg 
+             leading-[18px]
+             text-[#33333380]
+              ">2:34</div>
             </div>
           </div>
         </div>
@@ -41,392 +158,8 @@ defineProps({
 
 
 <style lang="scss" scoped>
-.main {
-  // align-items: center;
-  height: 100%;
-  padding-top: 144px;
-
-
-  >div {
-    display: flex;
-    justify-content: space-between;
-    height: 570px;
-
-    .secondPage_font {
-      // width: 50%;
-      margin-right: 10px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      .top {
-        max-width: 345px;
-        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-56)/var(--unnamed-line-spacing-64) Heiti TC;
-        letter-spacing: var(--unnamed-character-spacing-0);
-        color: var(--unnamed-color-333333);
-        text-align: left;
-        font: normal normal 300 56px/64px Heiti TC;
-        letter-spacing: 0px;
-        color: #333333;
-        opacity: 1;
-
-        // margin-top: 190px;
-      }
-
-      .middle {
-        max-width: 406px;
-        // height: 70px;
-        /* UI Properties */
-        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-32) Heiti TC;
-        letter-spacing: var(--unnamed-character-spacing-0);
-        color: var(--unnamed-color-33333380);
-        text-align: left;
-        font: normal normal 300 18px/32px Heiti TC;
-        letter-spacing: 0px;
-        color: #33333380;
-        opacity: 1;
-
-        margin-top: 24px;
-      }
-
-      .bottom {
-        width: 170px;
-        height: 48px;
-        /* UI Properties */
-        border: 1px solid var(--unnamed-color-333333);
-        border: 1px solid rgba(51, 51, 51, 0.32);
-        border-radius: 24px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        margin-top: 28px;
-
-        >span {
-          font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) 16px/var(--unnamed-line-spacing-24) Heiti TC;
-          color: var(--unnamed-color-333333);
-          text-align: center;
-          font: normal normal 300 16px/24px Heiti TC;
-          letter-spacing: 1px;
-          color: #333333;
-          text-transform: uppercase;
-          opacity: 1;
-        }
-      }
-
-    }
 
 
 
-    .secondPage_Pic {
-      width: 570px;
-      height: 560px;
-      min-width: 346px;
-      flex-shrink: 0;
-      background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
-      background: #FFFFFF 0% 0% no-repeat padding-box;
-      box-shadow: 20px 20px 40px #0000001A;
-      border-radius: 30px;
-      opacity: 1;
-      position: relative;
 
-      .secondPic {
-        width: 100%;
-        object-fit: contain;
-      }
-
-      .playArea {
-        width: 100%;
-        height: 140px;
-        padding: 32px;
-        display: flex;
-        align-items: center;
-        position: absolute;
-        bottom: 0;
-        background: white;
-        border-radius: 0 0 30px 30px;
-
-        .playArea_font {
-          width: 100%;
-          height: 100%;
-          margin-left: 16px;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-
-          >div:nth-child(1) {
-            height: 24px;
-            /* UI Properties */
-            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-32) Heiti TC;
-            letter-spacing: var(--unnamed-character-spacing-0);
-            color: var(--unnamed-color-333333);
-            text-align: left;
-            font: normal normal 300 24px/32px Heiti TC;
-            letter-spacing: 0px;
-            color: #333333;
-            opacity: 1;
-            line-height: 24px;
-          }
-
-          >div:nth-child(2) {
-            height: 18px;
-            /* UI Properties */
-            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-32) Heiti TC;
-            letter-spacing: var(--unnamed-character-spacing-0);
-            color: var(--unnamed-color-33333380);
-            text-align: left;
-            font: normal normal 300 18px/32px Heiti TC;
-            letter-spacing: 0px;
-            color: #33333380;
-            opacity: 1;
-            line-height: 18px;
-          }
-        }
-      }
-    }
-  }
-
-
-
-  @media (max-width: 1000px) {
-    >div {
-      .secondPage_font {
-        .top {
-          width: calc(100% - 10px);
-          // height: 88px;
-          /* UI Properties */
-          font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-40)/var(--unnamed-line-spacing-48) Heiti TC;
-          letter-spacing: var(--unnamed-character-spacing-0);
-          color: var(--unnamed-color-333333);
-          text-align: left;
-          font: normal normal 300 40px/48px Heiti TC;
-          letter-spacing: 0px;
-          color: #333333;
-          opacity: 1;
-          padding: 0;
-          line-height: 40px;
-        }
-
-        .middle {
-          width: calc(100% - 10px);
-          // height: 70px;
-          /* UI Properties */
-          font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-32) Heiti TC;
-          letter-spacing: var(--unnamed-character-spacing-0);
-          color: var(--unnamed-color-33333380);
-          text-align: left;
-          font: normal normal 300 18px/32px Heiti TC;
-          letter-spacing: 0px;
-          color: #33333380;
-          opacity: 1;
-          line-height: 18px;
-
-          margin-top: 24px;
-        }
-
-        .bottom {
-          width: 170px;
-          height: 48px;
-          /* UI Properties */
-          border: 1px solid var(--unnamed-color-333333);
-          border: 1px solid rgba(51, 51, 51, 0.32);
-          border-radius: 24px;
-
-          margin-top: 28px;
-
-          >span {
-            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) 16px/var(--unnamed-line-spacing-24) Heiti TC;
-            color: var(--unnamed-color-333333);
-            text-align: center;
-            font: normal normal 300 16px/24px Heiti TC;
-            letter-spacing: 1px;
-            color: #333333;
-            text-transform: uppercase;
-            opacity: 1;
-          }
-        }
-      }
-      .secondPage_Pic {
-        width: 346px;
-        flex-shrink: 0;
-        height: 560px;
-        opacity: 1;
-        margin-bottom: 153px;
-        background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
-        background: #FFFFFF 0% 0% no-repeat padding-box;
-        box-shadow: 20px 20px 40px #0000001A;
-        border-radius: 30px;
-        opacity: 1;
-        .secondPic {
-          height: 100%;
-          border-radius: 30px;
-          object-fit: cover;
-        }
-      }
-    }
-
-
-  }
-}
-
-.mainContainer {
-  height: 800px;
-}
-
-
-@media (max-width: 600px) {
-  .mainContainer {
-    height: 1400px;
-  }
-
-  .main {
-
-    // padding-top: 127px;
-    // height: 1472px;
-    // background: red;
-    padding: 0;
-
-    >div {
-      display: flex;
-      flex-direction: column;
-      height: auto;
-      // justify-content: flex-start;
-      // align-items: flex-start;
-      // justify-content: space-between;
-      align-items: center;
-
-
-      .secondPage_font {
-        // width: 100%;
-        // height: 560px;
-        flex-shrink: 0;
-        margin-top: 319px;
-        margin-right: 0;
-
-        .top {
-          top: 1199px;
-          font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-40)/var(--unnamed-line-spacing-48) Heiti TC;
-          letter-spacing: var(--unnamed-character-spacing-0);
-          color: var(--unnamed-color-333333);
-          text-align: left;
-          font: normal normal 300 40px/48px Heiti TC;
-          letter-spacing: 0px;
-          color: #333333;
-          opacity: 1;
-          line-height: 40px;
-
-          margin-top: 0px;
-        }
-
-        .middle {
-          width: 346px;
-          font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-32) Heiti TC;
-          letter-spacing: var(--unnamed-character-spacing-0);
-          color: var(--unnamed-color-33333380);
-          text-align: left;
-          font: normal normal 300 18px/32px Heiti TC;
-          letter-spacing: 0px;
-          color: #33333380;
-          opacity: 1;
-          line-height: 18px;
-
-          margin-top: 29px;
-        }
-
-        .bottom {
-          width: 170px;
-          height: 48px;
-          /* UI Properties */
-          border: 1px solid var(--unnamed-color-333333);
-          border: 1px solid rgba(51, 51, 51, 0.32);
-          border-radius: 24px;
-
-          margin-top: 28px;
-          margin-bottom: 80px;
-
-          >span {
-            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) 16px/var(--unnamed-line-spacing-24) Heiti TC;
-            color: var(--unnamed-color-333333);
-            text-align: center;
-            font: normal normal 300 16px/24px Heiti TC;
-            letter-spacing: 1px;
-            color: #333333;
-            text-transform: uppercase;
-            opacity: 1;
-          }
-        }
-      }
-
-      .secondPage_Pic {
-        width: 346px;
-        flex-shrink: 0;
-        height: 560px;
-        opacity: 1;
-        margin-bottom: 153px;
-        background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
-        background: #FFFFFF 0% 0% no-repeat padding-box;
-        box-shadow: 20px 20px 40px #0000001A;
-        border-radius: 30px;
-        opacity: 1;
-
-        .secondPic {
-          // height: 100%;
-          // object-fit: cover;
-          // h
-          // border-radius: 30px 30px 0 0px;
-          // height: 75%;
-          // margin-left: auto;
-        }
-
-        .playArea {
-          width: 100%;
-          height: 140px;
-          padding: 32px;
-          display: flex;
-          align-items: center;
-
-          .playArea_font {
-            width: 100%;
-            height: 100%;
-            margin-left: 16px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-
-            >div:nth-child(1) {
-              height: 24px;
-              /* UI Properties */
-              font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-32) Heiti TC;
-              letter-spacing: var(--unnamed-character-spacing-0);
-              color: var(--unnamed-color-333333);
-              text-align: left;
-              font: normal normal 300 24px/32px Heiti TC;
-              letter-spacing: 0px;
-              color: #333333;
-              opacity: 1;
-              line-height: 24px;
-            }
-
-            >div:nth-child(2) {
-              height: 18px;
-              /* UI Properties */
-              font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-300) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-32) Heiti TC;
-              letter-spacing: var(--unnamed-character-spacing-0);
-              color: var(--unnamed-color-33333380);
-              text-align: left;
-              font: normal normal 300 18px/32px Heiti TC;
-              letter-spacing: 0px;
-              color: #33333380;
-              opacity: 1;
-              line-height: 18px;
-            }
-          }
-        }
-      }
-    }
-
-  }
-
-
-}
 </style>
